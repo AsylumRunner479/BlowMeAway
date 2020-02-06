@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Score : MonoBehaviour
 {
-    public float Timer, MaxWalls, CurWalls, GoalWalls;
+    public static float Timer, MaxWalls, CurWalls, GoalWalls;
+    
     public GameManager manager;
     public GameObject _scoreMenu, _restart, _nextLevel;
     // Start is called before the first frame update
