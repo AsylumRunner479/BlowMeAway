@@ -8,20 +8,27 @@ public class Interact : MonoBehaviour
     public static float material;
     public Slider money;
     public Camera cam;
+    public WallManager[] wall;
+    public float curHealth, maxHealth;
     
     // Start is called before the first frame update
     void Start()
     {
         material = 300;
-        money.value = material;
+        money.value = Score.CurWalls/Score.MaxWalls;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
+        if (money.value != Score.CurWalls / Score.MaxWalls)
+        {
+            money.value = Score.CurWalls / Score.MaxWalls;
+        }
         if (Input.GetButton("Interact"))
         {
+           
             Ray ray = cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
@@ -35,7 +42,7 @@ public class Interact : MonoBehaviour
                             if (salvage.loot == true)
                             {
                                 salvage.Scavenge();
-                                money.value = material;
+                                
                             }
                             
                             else if (material >= 0 && salvage.wallManager.maxHealth >= salvage.wallManager.curHealth)
@@ -43,7 +50,7 @@ public class Interact : MonoBehaviour
                                 salvage.wallManager.curHealth += 100*Time.deltaTime;
                                 
                                 
-                                money.value = material;
+                                
                             }
                             else
                             {

@@ -1,8 +1,77 @@
 fileFormatVersion: 2
 guid: b1ebacdd98e70f6458c3ee6531d0914e
 ModelImporter:
-  serializedVersion: 26
-  internalIDToNameTable: []
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box012
+    100002: Box033
+    100004: Box034
+    100006: Chairs021
+    100008: Cylinder111
+    100010: Cylinder112
+    100012: Cylinder113
+    100014: Cylinder118
+    100016: Cylinder119
+    100018: Cylinder120
+    100020: Cylinder125
+    100022: Cylinder129
+    100024: //RootNode
+    100026: Reception_Bar01
+    400000: Box012
+    400002: Box033
+    400004: Box034
+    400006: Chairs021
+    400008: Cylinder111
+    400010: Cylinder112
+    400012: Cylinder113
+    400014: Cylinder118
+    400016: Cylinder119
+    400018: Cylinder120
+    400020: Cylinder125
+    400022: Cylinder129
+    400024: //RootNode
+    400026: Reception_Bar01
+    2100000: 22 - Default
+    2100002: No Name
+    2300000: Box012
+    2300002: Box033
+    2300004: Box034
+    2300006: Chairs021
+    2300008: Cylinder111
+    2300010: Cylinder112
+    2300012: Cylinder113
+    2300014: Cylinder118
+    2300016: Cylinder119
+    2300018: Cylinder120
+    2300020: Cylinder125
+    2300022: Cylinder129
+    2300024: Reception_Bar01
+    3300000: Box012
+    3300002: Box033
+    3300004: Box034
+    3300006: Chairs021
+    3300008: Cylinder111
+    3300010: Cylinder112
+    3300012: Cylinder113
+    3300014: Cylinder118
+    3300016: Cylinder119
+    3300018: Cylinder120
+    3300020: Cylinder125
+    3300022: Cylinder129
+    3300024: Reception_Bar01
+    4300000: Chairs021
+    4300002: Reception_Bar01
+    4300004: Box012
+    4300006: Cylinder111
+    4300008: Cylinder112
+    4300010: Cylinder113
+    4300012: Cylinder118
+    4300014: Cylinder119
+    4300016: Cylinder120
+    4300018: Cylinder125
+    4300020: Box033
+    4300022: Cylinder129
+    4300024: Box034
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,7 +107,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -46,19 +114,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -67,11 +134,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,7 +147,6 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

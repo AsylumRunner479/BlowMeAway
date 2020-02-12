@@ -30,21 +30,20 @@ public class WallManager : MonoBehaviour
         if (HealthBar.value != curHealth/maxHealth)
         {
             HealthBar.value = curHealth;
+            Score.CurWalls += curHealth;
+            Score.MaxWalls += curHealth;
         }
         if(curHealth <= 0f && rubbish.cost == 0f)
         {
 
             audio.Play();
             collapse = true;
-            score.CurWalls -= 1;
+            
             rubbish.cost = maxHealth;
             rubbish.loot = true;
 
         }
-        if(curHealth == maxHealth + 1)
-        {
-            score.CurWalls += 1;
-        }
+        
         if(curHealth >= maxHealth)
         {
             collapse = false;
